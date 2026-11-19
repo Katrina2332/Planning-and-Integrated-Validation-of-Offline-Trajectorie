@@ -1,2 +1,2 @@
-# pivot-Planning-and-Integrated-Validation-of-Offline-Trajectories--robot-trajectory
+# Planning-and-Integrated-Validation-of-Offline-Trajectories
 111
