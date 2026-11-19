@@ -221,3 +221,11 @@ __marimo__/
 
 # Streamlit
 .streamlit/secrets.toml
+
+# PIVOT generated and local files
+output/
+.venv/
+.vscode/
+.conda*/
+*.rdk
+*.robot

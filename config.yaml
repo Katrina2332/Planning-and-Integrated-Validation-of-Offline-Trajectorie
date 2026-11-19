@@ -1,0 +1,41 @@
+ids:
+  robot_id: ar2010
+  scene_id: ar2010_transport_demo
+  task_id: left_to_right_transport
+
+planner:
+  random_seed: 25
+  rrt:
+    step_size_deg: 14.0
+    max_iterations: 6000
+    goal_bias: 0.18
+    connect_max_extensions: 200
+  shortcut:
+    enabled: true
+    attempts: 500
+  validation:
+    edge_check_step_deg: 3.0
+    orientation_constraint_enabled: true
+    max_edge_tcp_rotation_deg: 30.0
+    max_ruckig_segment_tcp_rotation_deg: 35.0
+  ruckig:
+    sample_dt_s: 0.02
+
+output:
+  directory: output
+  save_csv: true
+  save_figures: true
+  show_visualization: true
+  figure_dpi: 180
+  files:
+    controller_program: final_controller_program.csv
+    ruckig_trajectory: final_ruckig_trajectory.csv
+    manual_keypoints: manual_keypoints.csv
+    rrt_keypoints: rrt_keypoints.csv
+    shortcut_keypoints: shortcut_keypoints.csv
+    metrics: metrics_comparison.csv
+    path_figure: path_comparison.png
+    joint_position_figure: ruckig_joint_position.png
+    joint_velocity_figure: ruckig_joint_velocity.png
+    joint_acceleration_figure: ruckig_joint_acceleration.png
+
