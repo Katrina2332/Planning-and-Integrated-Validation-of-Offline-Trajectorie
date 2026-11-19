@@ -1,0 +1,67 @@
+ar2010_transport_demo:
+  collision_safety_margin_m: 0.02
+  objects:
+    - name: left_pick_platform
+      size_m: [0.80, 0.65, 0.37]
+      center_m: [0.60, -0.80, 0.185]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: false
+      color: steelblue
+    - name: right_place_platform
+      size_m: [0.80, 0.65, 0.10]
+      center_m: [0.60, 0.80, 0.05]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: false
+      color: seagreen
+    - name: central_safety_block
+      size_m: [0.35, 0.50, 0.24]
+      center_m: [0.80, 0.0, 0.48]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: true
+      color: firebrick
+
+# 规划意义上的空碰撞场景：几何仍用于显示，但不参与碰撞检查。
+empty_scene:
+  collision_safety_margin_m: 0.02
+  objects:
+    - name: left_pick_platform
+      size_m: [0.80, 0.65, 0.37]
+      center_m: [0.60, -0.80, 0.185]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: false
+      color: steelblue
+    - name: right_place_platform
+      size_m: [0.80, 0.65, 0.10]
+      center_m: [0.60, 0.80, 0.05]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: false
+      color: seagreen
+    - name: central_safety_block
+      size_m: [0.35, 0.50, 0.24]
+      center_m: [0.80, 0.0, 0.48]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: false
+      color: firebrick
+
+# 使用当前 Demo 中已有的中央障碍物，不引入未经验证的几何参数。
+obstacle_scene:
+  collision_safety_margin_m: 0.02
+  objects:
+    - name: left_pick_platform
+      size_m: [0.80, 0.65, 0.37]
+      center_m: [0.60, -0.80, 0.185]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: false
+      color: steelblue
+    - name: right_place_platform
+      size_m: [0.80, 0.65, 0.10]
+      center_m: [0.60, 0.80, 0.05]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: false
+      color: seagreen
+    - name: central_safety_block
+      size_m: [0.35, 0.50, 0.24]
+      center_m: [0.80, 0.0, 0.48]
+      rpy_deg: [0.0, 0.0, 0.0]
+      collision_enabled: true
+      color: firebrick
